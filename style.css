@@ -1,0 +1,289 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    background-color: black;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.img {
+    margin: 2px 20px;
+}
+
+.img img {
+    margin: 5px;
+}
+
+.btn {
+    margin: 0 12px;
+}
+
+.btn2 {
+    background-color: white;
+    border-radius: 35px;
+    margin: 4px 8px;
+    padding: 11px 24px;
+    color: #000000;
+    font-size: large;
+    cursor: pointer;
+}
+
+.btn1 {
+    padding: 11px;
+    margin: 4px 8px;
+    background-color: black;
+    color: #b2b2b2;
+    font-size: large;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn1:hover{
+    padding: 12px;
+    margin: 5px 9px;
+    background-color: black;
+    color: white;
+    font-size: larger;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.body {
+    display: flex;
+}
+
+.left {
+    background-color: #121212;
+    width: 25vw;
+    height: 90vh;
+    /* min-height: 95vh; */
+    margin: 0px 12px;
+    color: white;
+    font-weight: 500;
+    position: relative;
+    border-radius: 10px;
+
+}
+
+.right {
+    background-color: #202020;
+    width: 75vw;
+    height: 90vh;
+    /* min-height: 95vh; */
+       border-radius: 10px;
+       color: white;
+       font-weight: 500;
+       position: relative;
+}
+
+.library {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.library div {
+    margin: 19px 21px;
+    display: flex;
+    align-items: center;
+}
+.songTime{
+    width: 100px;
+}
+
+.create {
+    background-color: #1f1f1f;
+    border-radius: 30px;
+    padding: 3px 18px;
+}
+
+.footer {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-size: 12px;
+    margin: 0px 24px;
+    position: absolute;
+    bottom: 20px;
+
+}
+.playlist{
+    margin: 15px 40px;
+
+}
+.card{
+display: flex;
+gap: 10px;
+max-height: 60vh;
+}
+.cards{
+    width: 170px;
+    font-size: 14px;
+    margin: 9px 4px;
+    color: #b2b2b2;
+}
+.cards img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 9px;
+}
+.cards h2 {
+        margin: 8px 0px;
+        font-size: 19px;
+}
+.playbar{
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 73%;
+    background-color: rgb(56, 56, 56);
+    margin-bottom: 10px;
+   
+}
+.songList{
+   padding: 4px 10px;
+   height: 500px;
+   overflow: auto;
+}
+.songList ul li{
+    list-style-type: decimal;
+    display: flex;
+    gap: 20px;
+    /* align-items: center; */
+    justify-content: space-between;
+    border: 2px solid rgb(56, 55, 55);
+    margin: 14px 0px;
+    padding: 7px 10px;
+    cursor: pointer;
+}
+.play{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    width: 56px;
+}
+.info{
+    width: 344px;
+}
+.seekbar{
+    height: 7px;
+    width: 95%;
+    background-color:#8e8a8a;
+    position: absolute;
+    bottom: 0;
+    border-radius: 8px;
+    margin: 2px 23px;
+    cursor: pointer;
+
+}
+.pointer{
+     height: 13px;
+    width: 12px;
+    left: 0%;
+    background-color: white;
+    border-radius: 45px;
+    position: absolute;
+    bottom: -3px;
+    transition:left 0.5s;
+}
+.songButton img {
+    cursor: pointer;
+}
+.songDesc{
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 14px;
+
+}
+.hamburger{
+    display: none;
+}
+.close{
+    display: none;
+}
+.timeVol {
+    display: flex;
+    gap: 3px;
+}
+.volume input{
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 1268px)
+{
+.left{
+    position: absolute;
+    left: -110%;
+    z-index: 1;
+    width: 400px;
+    transition: all 0.5s;
+    height: 80vh;
+}
+.cards{
+    width: 350px;
+    font-size: 23px;
+}
+.cards h2 {
+    font-size: 28px;
+}
+.card{
+    max-height: 70vh;
+    overflow: auto;
+    flex-direction: column;
+    align-items: center;
+}
+.right{
+    width: 100%;
+}
+.playbar {
+        width: 100%;
+        left: 0;
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    .songDesc {
+        flex-direction: column;
+        /* gap: 10px; */
+        align-items: center;
+        text-align: center;
+    }
+
+    .songButton {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .seekbar {
+        width: 90%;
+        margin: 3px auto;
+        position: relative;
+    }
+    .btn1{
+        display: none;
+    }
+    .hamburger{
+        display: inline-block;
+    }
+    .close{
+        display: inline-block;
+        padding-right: 25px;
+    }
+ 
+}

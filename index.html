@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="img invert">
+
+            <img class="hamburger" src="hamburger.svg" alt="">
+            <img src="https://raw.githubusercontent.com/CodeWithHarry/Sigma-Web-Dev-Course/b0acb01fa88ae0753ef903b8fc45fadb5efe1c2b/Video%2084%20-%20Project%202%20-%20Spotify%20Clone/img/logo.svg"
+                alt="">
+            <img src="https://raw.githubusercontent.com/CodeWithHarry/Sigma-Web-Dev-Course/b0acb01fa88ae0753ef903b8fc45fadb5efe1c2b/Video%2084%20-%20Project%202%20-%20Spotify%20Clone/img/home.svg"
+                width="28px" alt="">
+        </div>
+        <div class="btn">
+            <button class="btn1">
+                Premium
+            </button>
+            <button class="btn1">
+                support
+            </button>
+            <button class="btn1">
+                download
+            </button>
+            <button class="btn1">
+                sign up
+            </button>
+            <button class="btn2">
+                Log in
+            </button>
+        </div>
+    </div>
+    <div class="body">
+
+
+        <div class="left">
+            <div class="library">
+                <div>
+                    Your library
+                </div>
+                <div class="create">
+                    <svg data-component="Octicon" aria-hidden="true" focusable="false" class="octicon octicon-plus"
+                        viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block"
+                        overflow="visible" style="vertical-align:text-bottom">
+                        <path
+                            d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z">
+                        </path>
+                    </svg>
+                    create
+                </div>
+                <img class="invert close" src="close.svg" alt="">
+            </div>
+            <div class="songList">
+
+                <ul>
+
+                </ul>
+
+            </div>
+            <div class="footer">
+                <div class="list">
+
+                    <ul>
+                        legal
+                    </ul>
+                    <ul>
+                        cookies
+                    </ul>
+                    <ul>
+                        <a href="">cookies</a>
+                    </ul>
+
+                </div>
+                <div class="list">
+
+                    <ul>
+                        Safety & privacy center
+                    </ul>
+                    <ul>
+                        About ads
+                    </ul>
+
+                </div>
+                <div class="list">
+                    <ul>
+                        Privacy policy
+                    </ul>
+                    <ul>
+                        Accessibility
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="playlist">
+
+
+                <h2>
+                    Trending songs
+                </h2>
+                <div class="card">
+
+                    <div class="cards" data-song="Tujhko Cocktail 2 128 Kbps.mp3">
+                        <img src="img1.jpg" alt="">
+                        <h2>
+                            Tujko-From "Cocktail 2"
+                        </h2>
+                        <p>
+                            Pritam,Arjit singh,Sunidi chauhan,Amitabh
+                        </p>
+
+                    </div>
+                    <div class="cards"  data-song="Tujhko Cocktail 2 128 Kbps.mp3">
+                        <img src="img1.jpg" alt="">
+                        <h2>
+                            Tujko-From "Cocktail 2"
+                        </h2>
+                        <p>
+                            Pritam,Arjit singh,Sunidi chauhan,Amitabh
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="playbar">
+
+
+                <div class="songDesc">
+
+                     <div class="songInfo">
+                        
+                    </div>
+                    <div class="songButton">
+                        <img class="invert" id="previous" src="prevsong.svg" alt="">
+                        <img class="invert" id="play" src="play.svg" alt="">
+                        <img class="invert" id="next" src="nextsong.svg" alt="">
+                    </div>
+                   <div class="timeVol">
+
+                  
+                      <div class="songTime">
+                        00:00/00:00
+                       </div>
+                       <div class="volume">
+                            <img class="invert" src="volume.svg" alt="">
+                            <input type="range" name="volume" id="volRange">
+                       </div>
+                    </div>
+                </div>
+
+                <div class="seekbar">
+                    <div class="pointer">
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
